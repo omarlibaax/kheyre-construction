@@ -5,7 +5,7 @@
 
 .services-hero {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, var(--dark-bg-primary) 0%, var(--dark-bg-secondary) 100%);
   color: white;
 }
 
@@ -62,16 +62,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f8f9fa;
+  background: rgba(16, 185, 129, 0.15);
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  color: #d4af37;
+  color: #3d875b;
+}
+
+.service-icon-wrapper svg {
+  stroke: #3d875b !important;
+  fill: none !important;
 }
 
 .service-detail-info h2 {
   font-size: clamp(1.75rem, 3vw, 2.25rem);
   font-weight: 800;
-  color: #0a0a0a;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
 }
@@ -79,7 +84,7 @@
 .service-description {
   font-size: 1.125rem;
   line-height: 1.7;
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 2rem;
 }
 
@@ -90,7 +95,7 @@
 .service-features h3 {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #0a0a0a;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
@@ -103,7 +108,7 @@
 .service-features li {
   font-size: 1rem;
   line-height: 1.8;
-  color: #666;
+  color: var(--text-secondary);
   padding-left: 1.5rem;
   position: relative;
   margin-bottom: 0.5rem;
@@ -113,7 +118,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #d4af37;
+  color: var(--primary-green);
   font-weight: 700;
 }
 
@@ -122,8 +127,8 @@
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
-  background: #d4af37;
-  color: #0a0a0a;
+  background: var(--primary-green);
+  color: white;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -132,9 +137,9 @@
 }
 
 .service-cta-btn:hover {
-  background: #c5a028;
+  background: var(--primary-green-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
 }
 
 .service-cta-btn svg {
@@ -168,8 +173,8 @@
 
 .services-cta {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #d4af37 0%, #c5a028 100%);
-  color: #0a0a0a;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  color: white;
 }
 
 .services-cta-content {
@@ -189,7 +194,7 @@
   font-size: 1.125rem;
   line-height: 1.7;
   margin-bottom: 2rem;
-  color: rgba(10, 10, 10, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .btn {
@@ -208,15 +213,15 @@
 }
 
 .btn-primary {
-  background: #0a0a0a;
-  color: #ffffff;
-  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
+  background: var(--primary-green);
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.3);
 }
 
 .btn-primary:hover {
-  background: #1a1a1a;
+  background: var(--primary-green-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 20px 0 rgba(16, 185, 129, 0.4);
 }
 
 .btn-large {
