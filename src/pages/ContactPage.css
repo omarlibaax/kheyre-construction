@@ -5,7 +5,7 @@
 
 .contact-hero {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, var(--dark-bg-primary) 0%, var(--dark-bg-secondary) 100%);
   color: white;
 }
 
@@ -45,7 +45,7 @@
 .contact-info-section h2 {
   font-size: clamp(1.75rem, 3vw, 2.25rem);
   font-weight: 800;
-  color: #0a0a0a;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
 }
@@ -53,7 +53,7 @@
 .contact-intro {
   font-size: 1.125rem;
   line-height: 1.7;
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 2.5rem;
 }
 
@@ -76,8 +76,8 @@
 }
 
 .contact-info-card:hover {
-  border-color: #d4af37;
-  background: white;
+  border-color: var(--primary-blue);
+  background: var(--white);
 }
 
 .contact-icon {
@@ -88,31 +88,31 @@
 .contact-info-card h3 {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #0a0a0a;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 
 .contact-info-card p {
   font-size: 1rem;
   line-height: 1.7;
-  color: #666;
+  color: var(--text-secondary);
   margin: 0;
 }
 
 .contact-info-card a {
-  color: #d4af37;
+  color: var(--primary-blue);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .contact-info-card a:hover {
-  color: #c5a028;
+  color: var(--primary-blue-dark);
 }
 
 .contact-social h3 {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #0a0a0a;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
@@ -136,8 +136,8 @@
 }
 
 .contact-social .social-links a:hover {
-  background: #d4af37;
-  border-color: #d4af37;
+  background: var(--primary-green);
+  border-color: var(--primary-green);
   transform: translateY(-2px);
 }
 
