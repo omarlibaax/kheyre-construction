@@ -1,0 +1,244 @@
+.certification-page {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.certification-hero {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: white;
+}
+
+.certification-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.certification-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.certification-hero .hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.certifications-list {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+}
+
+.certification-card-detailed {
+  background: #fafafa;
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  gap: 2rem;
+  transition: all 0.2s ease;
+}
+
+.certification-card-detailed:hover {
+  border-color: #d4af37;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.cert-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 12px;
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+.cert-content {
+  flex: 1;
+}
+
+.cert-content h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 0.5rem;
+}
+
+.cert-description {
+  font-size: 1rem;
+  color: #d4af37;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cert-details {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.cert-meta {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.cert-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.meta-label {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.meta-value {
+  font-size: 0.9375rem;
+  color: #0a0a0a;
+  font-weight: 600;
+}
+
+.achievements {
+  padding: 6rem 0;
+  background: #fafafa;
+}
+
+.achievements .section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.achievements .section-header h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #0a0a0a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.achievements .section-subtitle {
+  font-size: 1.125rem;
+  color: #666;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.achievement-card:hover {
+  border-color: #d4af37;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.achievement-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  color: #d4af37;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.achievement-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 0.75rem;
+}
+
+.achievement-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+.certification-cta {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #d4af37 0%, #c5a028 100%);
+  color: #0a0a0a;
+}
+
+.certification-cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.certification-cta-content h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.certification-cta-content p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: rgba(10, 10, 10, 0.8);
+}
+
+@media (max-width: 968px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-card-detailed {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .certification-page {
+    padding-top: 70px;
+  }
+
+  .certification-hero,
+  .certifications-list,
+  .achievements,
+  .certification-cta {
+    padding: 4rem 0;
+  }
+
+  .cert-meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

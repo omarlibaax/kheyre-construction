@@ -1,0 +1,353 @@
+/* Enhanced Responsive Design for Mobile & Tablets */
+
+/* Tablet Styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  /* Navigation adjustments */
+  .nav-menu {
+    gap: 1.5rem;
+  }
+
+  /* Hero section */
+  .hero-headline {
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+  }
+
+  /* Grid adjustments */
+  .services-grid,
+  .projects-grid,
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Cards */
+  .service-card,
+  .project-card,
+  .benefit-card {
+    padding: 2rem;
+  }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+  /* Base container */
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  /* Typography scaling */
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+  }
+
+  /* Navigation */
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Hero section */
+  .hero {
+    min-height: 500px;
+    padding-top: 80px;
+  }
+
+  .hero-content {
+    padding: 0 1.5rem;
+  }
+
+  .hero-headline {
+    font-size: clamp(2rem, 8vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.125rem);
+    margin-bottom: 2rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Grid layouts - single column on mobile */
+  .services-grid,
+  .projects-grid,
+  .benefits-grid,
+  .testimonials-grid,
+  .about-content,
+  .mv-grid,
+  .team-grid,
+  .achievements-grid,
+  .certifications-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Cards */
+  .service-card,
+  .project-card,
+  .benefit-card,
+  .testimonial-card,
+  .about-card,
+  .mv-card,
+  .team-card,
+  .achievement-card,
+  .certification-card-detailed,
+  .blog-card {
+    padding: 1.5rem;
+  }
+
+  /* Service detail cards */
+  .service-detail-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .service-detail-card:nth-child(even) .service-detail-content {
+    direction: ltr;
+  }
+
+  .service-detail-image {
+    order: -1;
+    max-height: 300px;
+  }
+
+  /* Project cards */
+  .project-image {
+    height: 220px;
+  }
+
+  .project-card-detailed .project-image {
+    height: 250px;
+  }
+
+  /* Story content */
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .story-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  /* Contact form */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-form-section {
+    position: static;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  /* Filter buttons */
+  .filter-buttons {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .filter-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  /* Section padding */
+  section {
+    padding: 3rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  /* CTA sections */
+  .cta-content,
+  .services-cta-content,
+  .projects-cta-content {
+    padding: 0 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    min-height: 400px;
+    padding-top: 70px;
+  }
+
+  .hero-headline {
+    font-size: clamp(1.75rem, 10vw, 2.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .service-card,
+  .project-card,
+  .benefit-card,
+  .testimonial-card {
+    padding: 1.25rem;
+  }
+
+  .story-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 1.25rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .service-detail-image {
+    max-height: 250px;
+  }
+}
+
+/* Landscape Mobile (up to 768px height) */
+@media (max-height: 768px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding-top: 80px;
+  }
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .footer,
+  .hero-scroll-indicator,
+  .btn,
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    border: 2px solid currentColor;
+  }
+
+  .service-card,
+  .project-card {
+    border-width: 2px;
+  }
+}
