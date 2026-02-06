@@ -81,8 +81,29 @@
 }
 
 .contact-icon {
-  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 12px;
+  color: var(--primary-blue);
   flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.contact-info-card:hover .contact-icon {
+  background: var(--primary-blue);
+  color: white;
+  transform: scale(1.05);
 }
 
 .contact-info-card h3 {
@@ -127,12 +148,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fafafa;
+  background: var(--gray-50);
   border-radius: 8px;
-  font-size: 1.25rem;
+  color: var(--text-secondary);
   transition: all 0.2s ease;
   text-decoration: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--gray-200);
+}
+
+.contact-social .social-links a svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
 }
 
 .contact-social .social-links a:hover {

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import SEO from '../components/SEO';
 import ContactForm from '../components/ContactForm';
+import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, FacebookIcon, TwitterIcon, LinkedInIcon, InstagramIcon } from '../components/Icons';
 import './ContactPage.css';
 
 const Contact = () => {
@@ -39,7 +40,9 @@ const Contact = () => {
 
               <div className="contact-info-cards">
                 <div className="contact-info-card">
-                  <div className="contact-icon">📍</div>
+                  <div className="contact-icon">
+                    <MapPinIcon />
+                  </div>
                   <div>
                     <h3>Address</h3>
                     <p>
@@ -51,7 +54,9 @@ const Contact = () => {
                 </div>
 
                 <div className="contact-info-card">
-                  <div className="contact-icon">📞</div>
+                  <div className="contact-icon">
+                    <PhoneIcon />
+                  </div>
                   <div>
                     <h3>Phone</h3>
                     <p>
@@ -62,7 +67,9 @@ const Contact = () => {
                 </div>
 
                 <div className="contact-info-card">
-                  <div className="contact-icon">✉️</div>
+                  <div className="contact-icon">
+                    <MailIcon />
+                  </div>
                   <div>
                     <h3>Email</h3>
                     <p>
@@ -73,7 +80,9 @@ const Contact = () => {
                 </div>
 
                 <div className="contact-info-card">
-                  <div className="contact-icon">🕒</div>
+                  <div className="contact-icon">
+                    <ClockIcon />
+                  </div>
                   <div>
                     <h3>Business Hours</h3>
                     <p>
@@ -88,10 +97,18 @@ const Contact = () => {
               <div className="contact-social">
                 <h3>Follow Us</h3>
                 <div className="social-links">
-                  <a href="#" aria-label="Facebook">📘</a>
-                  <a href="#" aria-label="Twitter">🐦</a>
-                  <a href="#" aria-label="LinkedIn">💼</a>
-                  <a href="#" aria-label="Instagram">📷</a>
+                  <a href="#" aria-label="Facebook">
+                    <FacebookIcon />
+                  </a>
+                  <a href="#" aria-label="Twitter">
+                    <TwitterIcon />
+                  </a>
+                  <a href="#" aria-label="LinkedIn">
+                    <LinkedInIcon />
+                  </a>
+                  <a href="#" aria-label="Instagram">
+                    <InstagramIcon />
+                  </a>
                 </div>
               </div>
             </div>
