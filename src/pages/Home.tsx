@@ -7,7 +7,6 @@ import Projects from '../components/Projects';
 import CTA from '../components/CTA';
 import Testimonials from '../components/Testimonials';
 import Certification from '../components/Certification';
-import FAQ from '../components/FAQ';
 import './Home.css';
 
 const Home = () => {
@@ -26,7 +25,6 @@ const Home = () => {
       <CTA />
       <Testimonials />
       <Certification />
-      <FAQ />
     </div>
   );
 };
