@@ -20,7 +20,7 @@ const Projects = () => {
       category: 'Infrastructure',
       description: 'Major bridge construction project connecting two major cities.',
       image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop'
-    },
+    },git addg
     {
       title: 'Shopping Mall',
       category: 'Commercial',
